@@ -1,4 +1,4 @@
-# slot-app
+# api
 
 To install dependencies:
 

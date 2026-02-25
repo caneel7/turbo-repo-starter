@@ -1,4 +1,4 @@
-# slot-app
+# database
 
 To install dependencies:
 

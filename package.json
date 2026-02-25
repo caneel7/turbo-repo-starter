@@ -1,0 +1,21 @@
+{
+  "name": "slot-app",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "turbo": "^2.8.11"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  },
+  "type": "module",
+  "workspaces": [
+    "app/*",
+    "packages/*"
+  ]
+}
