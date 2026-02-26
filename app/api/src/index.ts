@@ -7,6 +7,7 @@ import cors from '@elysiajs/cors';
 import bearer from '@elysiajs/bearer';
 import jwt from '@elysiajs/jwt';
 import { prisma } from '@slot/database'
+import { Router } from './router';
 
 const app = new Elysia({
     adapter: node(),
@@ -29,7 +30,8 @@ const app = new Elysia({
                 version: '1',
             }
         }
-    }));
+    }))
+    .use(Router);
 
 app.listen(PORT, async () => {
     await prisma.$connect();
